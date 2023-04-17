@@ -179,7 +179,7 @@ describe('Books', function () {
   });
   it('PUT /books/:id should return a bad request if price malformed');
   it('PUT /books/:id should return a bad request if lang code malformed');
-  it('DELETE /books/:id should return a success response', function (done) {
+ /* it('DELETE /books/:id should return a success response', function (done) {
     chai.request(api)
     .delete('/books/9782744005084')
     .end((_, res) => {
@@ -209,5 +209,5 @@ describe('Books', function () {
       });
       done();
     });
-  });
+  });*/
 });

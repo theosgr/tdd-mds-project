@@ -9,4 +9,5 @@ export default (controlers, app) => {
 
   app.get('/users', controlers.userCtrl.listUsers);
   app.post('/users', controlers.userCtrl.createUser);
+  app.put('/users/:id', controlers.userCtrl.updateUser);
 }
