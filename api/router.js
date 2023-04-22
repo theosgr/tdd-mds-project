@@ -10,4 +10,9 @@ export default (controlers, app) => {
   app.get('/users', controlers.userCtrl.listUsers);
   app.post('/users', controlers.userCtrl.createUser);
   app.put('/users/:id', controlers.userCtrl.updateUser);
+  app.get('/users/:id', controlers.userCtrl.getUser);
+  app.delete('/users/:id', controlers.userCtrl.deleteUser);
+
+  app.get('/bookings', controlers.bookingCtrl.listBookings);
+  app.post('/bookings', controlers.bookingCtrl.createBooking);
 }
