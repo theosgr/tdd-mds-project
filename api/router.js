@@ -15,4 +15,9 @@ export default (controlers, app) => {
 
   app.get('/bookings', controlers.bookingCtrl.listBookings);
   app.post('/bookings', controlers.bookingCtrl.createBooking);
+  app.get('/bookings/:id', controlers.bookingCtrl.getBooking);
+  app.get('/bookings/users/:id', controlers.bookingCtrl.getBookingByUser);
+  app.get('/bookings/items/:isbn', controlers.bookingCtrl.getBookingByBook);
+  app.put('/bookings/:id', controlers.bookingCtrl.updateBookingReturnDate);
+  app.delete('/bookings/:id', controlers.bookingCtrl.deleteBooking);
 }
